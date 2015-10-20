@@ -1,0 +1,11 @@
+功能主要介绍：
+主入口  androidVNC。java，其中函数都可以用
+从主入口开启VncCanvasActivity。java的activity，然后从VncVanvas。java创建一个对象vncCanvas调用initializeVncCanvas这个函数进行初始化
+在这个初始化函数中，创建线程用这个connectAndAuthenticate方法链接服务器，链接成功后在调用doProtocolInitialisation方法用来显示桌面初始化
+初始化桌面后，调用processNormalProtocol这个方法，是显示桌面的主要代码（主要改这一块，其中手势操作的都可以删去）。
+
+
+
+
+
+ps:启动工程 要配置好路径，还要下载sqlite库方可调试
